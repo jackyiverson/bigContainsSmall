@@ -42,7 +42,5 @@ public class App {
 	//----------------------STARTING POINT OF PROGRAM. IGNORE BELOW --------------------//
 	public static void main(String[] args) {
 		TestingUtils.runTests();
-
 	}
-
 }

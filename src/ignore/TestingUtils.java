@@ -8,10 +8,10 @@ public class TestingUtils {
 	
 	public static void runTests(){
 		
-		int [][] params1 = {{1,2,4,6},{2,2,2,2,2},{1,2,4,6},{1,2,4,6},{1,2,4,4,6},{1,2,3,4,5,6},{2,3,4,5,6,7},{2,3,4,5,6,7,8},{2,3,4,4,4,5,5,6,7,8},{2,3,4,4,4,5,5,5,5,6,7,8}};
-		int [][] params2 = {{2},{2,2,2,2},{2,4},{2,3,4},{2,4},{1,3,5},{1,2,3,4,7},{2,2,3,4,4},{4,4,4,4,4,5,5,8},{4,4,4,5,5,6,7,8}};
+		int [][] params1 = {{1,2,4,6},{1,2,4,6},{1,2,4,4,6},{2,2,4,4,6,6},{2,2,2,2,2},{2,2,2,2,2},{2,2,2,2,4},{1,2,3},{1,2,3},{1,2,3},{-1,0,3,3,3,10,12},{-1,0,3,3,3,10,12},{-1,0,3,3,3,10,12}};
+		int [][] params2 = {{2,4},{2,3,4},{2,4},{2,4},{2,2},{2,4},{2,4},{2},{-1},{},{-1,0,3,12},{0,3,12,14},{-1,10,11}};
 		
-		boolean  [] expected = {true,true,true,false,true,true,false,false,false,true};
+		boolean  [] expected = {true,false,true,true,true,false,true,true,false,true,true,false,false};
         
 		for(int i=0; i < params1.length; i++){
 			boolean result = App.bigContainsSmall(params1[i], params2[i]);
